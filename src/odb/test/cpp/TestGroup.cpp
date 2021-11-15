@@ -11,6 +11,7 @@ struct F_DETAILED {
   F_DETAILED()
   {
     db        = create2LevetDbNoBTermsLargeNet();
+    std::cout << "db created" << std::endl;
     block     = db->getChip()->getBlock();
     lib       = db->findLib("lib1");
     master_mod1 = dbModule::create(block,"master_mod1");
