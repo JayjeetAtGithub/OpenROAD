@@ -10,7 +10,7 @@ using namespace std;
 struct F_DETAILED {
   F_DETAILED()
   {
-    db        = create2LevetDbNoBTerms();
+    db        = create2LevetDbNoBTermsLargeNet();
     block     = db->getChip()->getBlock();
     lib       = db->findLib("lib1");
     master_mod1 = dbModule::create(block,"master_mod1");
